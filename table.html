@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 100vw;
+            border-collapse: collapse; 
+            color: black;
+        }
+        td, th{
+            border: 1px solid white;
+            text-align: center;
+            padding: auto;
+        }
+        tr{
+            background-color: #f5f4f4;
+        }
+        tr:nth-child(even){
+            background-color: #a9a8a8ce;
+        }
+        tr:nth-child(1){
+            background-color: #e5e5e5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <h2>Tags</h2>
+    <b>tr</b> <small>table row</small> <br>
+    <b>th</b> <small>table head</small> <br>
+    <b>td</b> <small>table data</small> <br>
+    <h2>Attributes</h2>
+    <b>colspan</b> <small> span data cells across multiple columns and rows</small> 
+    <hr>
+    <table>
+        <caption style="caption-side: bottom;" ><small>Student Data</small></caption>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Section</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bhubnesh</td>
+            <td>IX</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Susmita</td>
+            <td>IX</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SaiVastav</td>
+            <td>IX</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Raguram</td>
+            <td>IX</td>
+            <td>B</td>
+        </tr>
+    </table>
+</body>
+</html>

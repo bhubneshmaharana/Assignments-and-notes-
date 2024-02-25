@@ -1,0 +1,87 @@
+<!--
+    XML,XHTML and different formats 
+    why by default the HTML files are called index.html 
+    bcz hmlt was earlier run on apache where this naming convention was used 
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <style> *{font-family: Arial, Helvetica, sans-serif;} </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Food Blog"> <small>description about the whole website</small>
+    <meta http-equiv="refresh" content="5">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> // default zoom level of the page i.e. scale = 1
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML - Hyper Text Markup Language </h1> 
+    <h2>Use : Structure the website</h2>
+    <p>commmon misconseption developer have,
+        that html can be used to design the page.
+        but we have CSS dedicated for that.
+    </p>
+    <h3>RULE 1 : USE HTML ONLY FOR FOR PAGE LAYOUT</h3>
+    <b>lattex markdown also also there but HTML is widly accepted in the browser </b>
+
+
+    <h3>Bad Pactice</h3>
+    <Footer>
+        <p>Vijayvada, Andrapradesh</p>
+    </Footer>
+    <br>
+    <h3>Good pratice</h3>
+    <Footer>
+        <Address>
+            Vijayvada, Andrapradesh
+        </Address>
+    </Footer>
+    <h3>NOTE 3 :always use the specified tags to wrap the specific content</h3>
+
+
+    <ul>
+        <li><h3>
+            <code>
+                !DOCTYPE html
+            </code>
+            </h3>
+            <p>!DOCTYPE : used for specify the laguage. <br>
+            html : used to specify the version of the html i.e.5</p>
+        </li>
+        <li>
+            <h3>html</h3>
+            <p>used to specify different features of code to the browser</p>
+             <ol> html has two children 
+                <li>
+                    <h4>head</h4>
+                    <p>information shown on the browser tab <br>
+                    it also has basically four parts : <br>
+                    <h4>meta : give document level metadata(information anout the data) about the page, ex. *name(used in backend), charset(<small>tell about the charecter encoding[means cahrecter set] of the docment </small>), http-equiv( <small>http-equiv - pragma directive : tell the V-8 how to handel I/O</small>), itemdrop</h4>
+                    <h5>assinement : check different meta tags in the 'meta tag html google' <br>
+                     google has listed the best practice and mostly used tags which google seo use to rank the websitye <br>
+                    </h5>
+                    <h3>NOTE 4:how to use emmet : 'wriet tag_name:' get the available attributes</h3>
+                    <h4>title : name show on the browser tab</h4>
+                    <h4>Favicon : icon shown on the tab</h4></p>
+                    <h4>Link : used to link different files to the index.html</h4>
+                </li>
+                <li>
+                    <h4>body</h4>
+                </li>
+             </ol>
+        </li>
+        <h3>NOTE 5: DOCTYPE is a standalone tag -> means they don't have closing tags 
+            <br>
+            but while using react we will see how standalone stags cause problems and throw error 
+            <br>
+            best practice : use self closing tag i.e. < br />
+        </h3>
+        
+    </ul>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(70, 70, 70);
+            color: #f5f5f5;
+        }
+        .line{
+            color: rgba(255, 253, 253, 0.399)
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Tag</title>
+</head>
+<body>
+    <h1>Link Tag</h1>
+
+    <a target="_blank" href="http://"></a> <small>redirect to given link</small>
+    <a href="mailto:"></a> <small>open the default browser and fill the to field wih given link</small>
+    <a href="tel:+"></a> <small>copy the number to the dial pad through keypad-API in phone</small>
+    <a href="http://" target="_blank" rel="noopener noreferrer"></a>  
+    <h3>Assinement : Target </h3>
+    <ol>
+        <p>Read the <a href="https://stackoverflow.com/questions/18470097/difference-between-self-top-and-parent-in-the-anchor-tag-target-attribute">StackOverflow</a> article and list the the difference between the different target values</p>
+        <li>_blank</li>
+        <li>_self</li>
+        <li>_parent</li>
+        <li>_top</li>
+    </ol>
+    <h3>NOTE 1:</h3> Link and ID selector 
+    <p>link tag is mostly used to navigate within the webite <br>
+    when reading documentation then by clicking the values on the right side bar you r navigated to that section within the page <br>
+ex. <h4><a href="#resourse_id">RESOURCES</a></h4></p> 
+
+    <h1>Image Tag</h1>
+    <p><b>src</b> <small>address to the file</small></p>
+    <p><b>alt</b> <small>if the image is not available then this text will be shown</small></p>
+    <h3>NOTE 2:</h3> <small>image might not be available due to various reasons, server is down, image is deleted or internet is slow </small>
+    <img style="width: 500px;" src="./local_pic.png" alt="noimage"> <small>local image : pass the path in the src</small>
+    <img style="width: 500px; height: 300px;" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="noimage"> <small> for the online pic pass the image address in the src</small>
+    <h3>NOTE 1:</h3> <small>you can see both image are on same line bcz img is a block level tag where as 'p' is a line level tag</small>
+    <h3 id="resourse_id" >RESOURCES</h3>
+    <ul>
+        <li><a href="https://unsplash.com">Unplashed</a></li>
+        <li><a href="https://www.pexels.com">Pexels</a></li>
+        <li><a href="https://pixabay.com">pixelbay</a></li>
+    </ul>
+    <hr class="line">
+    <h3>NOTE 3:</h3>
+    <ul>
+        <li><code>./</code><small> -> in the current directory.</small></li>
+        <li><code>../</code><small> -> in the parent directory.</small></li>
+        <li><code>my pic.png</code><small> -> dont have spaces between  the file name it will cause error which fetch the file from server <br>
+        either use _ or rename it </small></li>
+    </ul>
+    <hr class="line">
+    <h3>Piture Tag</h3>
+    <picture>
+        <source media="(min-width: 700px)" width="90vw" srcset="./pics/8machine-_-gEV7xscpvRk-unsplash.jpg">
+        <source media="(min-width: 500px)" width="90vw" srcset="./pics/2.jpg">
+        <img src="./pics/4.jpg" style="width: 90vw;" alt="default, used when browser doesn'support src">
+    </picture>
+    <h3>Mpping In Pictures</h3>
+
+    
+        <img  src="pics/3.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area onclick="head()" target="" alt="Head" title="Head" href="" coords="2392,1516,3669,2640" shape="rect">
+            <area onclick="right_drum()" target="" alt="I am drum" title="I am drum" href="" coords="4198,2146,5722,3224,5757,3198" shape="rect">
+        </map>
+    
+
+    <script>
+        function head() {
+            alert("this is a christmas Skull !")
+        }
+        function right_drum() {
+            alert("this is the steel barren in the bottom left corner !")
+        }
+    </script>
+    
+</body>
+</html>
