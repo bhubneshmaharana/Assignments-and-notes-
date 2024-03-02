@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>**Forms**</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <p>Mostly forms are used to take user input like id and password which we then store in server. <br>
+    so it is very important to have  appropriate HTML structure for a form. <br>
+    when a form is submited then the complete form data is bundeled and passed to the server along with the request.</p>
+    <h2>Tags</h2>
+    <code>form</code> <small>used to to take use to take user input and submit it to the server</small>
+    <code>get</code> <small>send the data as plain text</small>
+    <code>lable</code> <small> element that represent the caption of a input field</small>
+    <code>input</code> <small>used to take user input</small>
+
+    <h2>Tags</h2>
+    <code>post</code> <small>send the data in encrypted format</small>
+    <form action="" method="get" accept-charset="UTF-16" autocomplete="on" encrypt >
+        <small>action : url of the location ehre the data will be submited</small>
+        ex. <h4>If we go to the google.com which is a search form. <br>
+        then the data we eneter there is passed to the server in plain text format <br>
+    your enter data is visible on the url also </h4>
+    <p><code><b>autocomplete</b> </code>Since users do not have to remember passwords that the browser stores for them, they are able to choose stronger passwords than they would otherwise. For this reason, many modern browsers do not support autocomplete="off" for login </p>
+    <label for="Fname">First Name :     <input type="text" name="" placeholder="First_name" id="Fname"></label>
+
+    <h3>Best Practice</h3> <small>to always add a lable tag bcz screen readers cant read placeholder <br>
+    to connect the lable and the placeholder we need a use for and id attribute </small>
+    <br>
+    <label for="last_name">Last Name</label>
+    <input type="text" name="" placeholder="last_name" id="Lname">
+    <button type="submit">Pay</button>
+    <br>
+    <small><b>as we have not set the action attribute thus after clicking the pay buttom the urls will have a ? at last <br>
+    which tell that the target url dosn't found.</b></small>
+    </form>
+    <form action="" method="post">
+        <p>we prefer <code>POST</code> methord when we have to send the data to the server.</p>
+        <small><strong>bcz the data transfer in a emcrypted format. <br>
+        better Data security.</strong></small>
+    </form>
+
+    <h2>Input</h2>
+    
+</body>
+</html>
